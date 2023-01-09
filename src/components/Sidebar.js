@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BsFillFilterSquareFill } from "react-icons/bs";
-// import SidebarOption from "./SidebarOption";
+
+
 
 const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
   
@@ -24,7 +24,6 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
   ];
   return (
     <div className="relative">
-      {/* <BsFillFilterSquareFill  className="sm:hidden text-gray-800 text-2xl left-3 absolute h-[calc(35vh-50px)]"/> */}
       <div className="hidden sm:block absolute  sm:bg-slate-800 h-[calc(100vh-70px)] top-[70px]  w-[250px] overflow-y-auto">
         <div className="">
           <div className="text-gray-300 text-left m-3 tracking-wider text-lg">

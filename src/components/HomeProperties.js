@@ -10,6 +10,7 @@ import axios from "axios";
 
 // import required modules
 import { Grid, Pagination, Autoplay } from "swiper";
+import { Link } from "react-router-dom";
 
 const HomeProperties = () => {
   const [properties, setProperties] = useState([]);
@@ -80,16 +81,17 @@ const HomeProperties = () => {
             <div className="flex">
               {properties.map((element, index) => (
                 <SwiperSlide>
-                  <div className="relative overflow-hidden rounded-lg shadow-md shadow-gray-600 cursor-pointer grid content-center bg-gray-700 hover:bg-gray-800">
-                    <div className="h-[200px]">
-                      <img
-                        className="object-cover mix-blend-overlay"
-                        src={element.coverImage.url}
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    {/* <div className="px-6 py-4 flex flex-row flex-auto z-20">
+                  <Link to={`property-view/${element._id}`}>
+                    <div className="relative overflow-hidden rounded-lg shadow-md shadow-gray-600 cursor-pointer grid content-center bg-gray-700 hover:bg-gray-800">
+                      <div className="h-[200px]">
+                        <img
+                          className="object-cover mix-blend-overlay"
+                          src={element.coverImage.url}
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                      {/* <div className="px-6 py-4 flex flex-row flex-auto z-20">
                       <h4 className="mb-3 text-xl font-bold tracking-wide text-white text-center">
                         <BsImageFill />
                       </h4>
@@ -97,7 +99,8 @@ const HomeProperties = () => {
                         20
                       </p>
                     </div> */}
-                  </div>
+                    </div>
+                  </Link>
                 </SwiperSlide>
               ))}
             </div>

@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
   return (
     <div>
+      <Navbar />
       <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
           <div

@@ -1,9 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Navbar from '../components/Navbar';
 
 const About = () => {
   return (
     <>
+    <Navbar />
       <div className="relative">
         <div className="absolute top-[80px] w-screen">
           <section class="text-gray-600 body-font">

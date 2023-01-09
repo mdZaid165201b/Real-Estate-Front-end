@@ -9,7 +9,6 @@ const Category = () => {
         "http://localhost:8000/api/admin/getRandomCategories"
       );
       setCategories(data.data.data);
-      console.log(categories);
     }
     fetchCategories();
   }, []);

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { BsFillFilterSquareFill } from "react-icons/bs";
-// import SidebarOption from "./SidebarOption";
+import React from "react";
+
+
 
 const Sidebar = ({
   selectedCategory,
@@ -8,24 +8,6 @@ const Sidebar = ({
   categories,
   setCategoryId,
 }) => {
-  // const sidebarText = [
-  //   {
-  //     name: "All",
-  //     total: 30,
-  //   },
-  //   {
-  //     name: "Township",
-  //     total: 40,
-  //   },
-  //   {
-  //     name: "Bahria Town",
-  //     total: 50,
-  //   },
-  //   {
-  //     name: "Muslim Town",
-  //     total: 10,
-  //   },
-  // ];
   const utilisSideBar = (element) => {
     setSelectedCategory(element.name);
     setCategoryId(element._id);
@@ -33,7 +15,6 @@ const Sidebar = ({
 
   return (
     <div className="relative">
-      {/* <BsFillFilterSquareFill  className="sm:hidden text-gray-800 text-2xl left-3 absolute h-[calc(35vh-50px)]"/> */}
       <div className="flex overflow-x-scroll scrollbar-hide sm:block absolute  sm:bg-[#1f201f] sm:h-[calc(100vh-70px)] top-[70px]  sm:w-[250px] sm:overflow-y-auto">
         <div className="">
           <div className="hidden sm:text-gray-300 text-left m-3 tracking-wider text-lg">
@@ -56,7 +37,6 @@ const Sidebar = ({
               key={element._id}
             >
               <span className="text-gray-200">{element.name}</span>
-              {/* <span className="text-gray-300">({element.total})</span> */}
             </div>
           ))}
         </div>

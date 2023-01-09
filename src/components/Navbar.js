@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full min-h-[70px] flex justify-between items-center z-10 text-white bg-[#111211] shadow-md shadow-gray-800 fixed">
+    <div className="w-full min-h-[70px] flex justify-between items-center z-10 text-white bg-[#111211] shadow-sm shadow-red-500 fixed">
       {/* <BsFillFilterSquareFill className="sm:hidden text-gray-800 text-2xl ml-4" /> */}
       <ul className="hidden sm:flex px-4">
         <li className="ml-8 text-lg font-medium hover:text-red-700 hover:border-b hover:border-red-700 duration-200">

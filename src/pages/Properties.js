@@ -42,7 +42,7 @@ const Properties = () => {
   console.log(properties);
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <Sidebar
         selectedCategory={selectedCategory}
